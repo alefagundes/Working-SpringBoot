@@ -9,13 +9,15 @@ import org.springframework.stereotype.Service;
 import com.alessandrof.workingSpring.entities.User;
 import com.alessandrof.workingSpring.repositories.UserRepository;
 
+
+
 @Service
 public class UserService {
-	
+
 	@Autowired
 	private UserRepository repository;
 	
-	public List<User> findAll(){
+	public List<User> findAll() {
 		return repository.findAll();
 	}
 	
